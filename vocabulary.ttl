@@ -2,7 +2,13 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vars: <http://purl.org/m4m-dk-3/variables/> .
 
+vars:sample_ID a skos:Concept;
+  skos:definition "Number given to the sample after institutes nameing standard"@en;
+  skos:inScheme <http://purl.org/m4m-dk-3/variables/>;
+  skos:prefLabel "sample_ID"@en;
+  skos:topConceptOf <http://purl.org/m4m-dk-3/variables/> .
+
 <http://purl.org/m4m-dk-3/variables/> a skos:Concept, skos:ConceptScheme;
-  skos:hasTopConcept <http://purl.org/m4m-dk-3/variables/>;
+  skos:hasTopConcept <http://purl.org/m4m-dk-3/variables/>, vars:sample_ID;
   skos:inScheme <http://purl.org/m4m-dk-3/variables/>;
   skos:topConceptOf <http://purl.org/m4m-dk-3/variables/> .
