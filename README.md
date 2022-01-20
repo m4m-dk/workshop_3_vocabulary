@@ -1,3 +1,6 @@
+[![CI](https://github.com/m4m-dk/workshop-3-vocabulary/workflows/Sheet2RDF/badge.svg)](https://github.com/m4m-dk/workshop-3-vocabulary/actions?query=workflow%3ASheet2RDF)
+
+
 [![DOI](https://zenodo.org/badge/327900313.svg)](https://zenodo.org/badge/latestdoi/327900313)
 
 # sheet2rdf
