@@ -1,16 +1,56 @@
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix pav: <http://purl.org/pav/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vars: <http://purl.org/m4m-dk-3/variables/> .
 
 <http://purl.org/m4m-dk-3/variables/> a skos:Concept, skos:ConceptScheme;
+  dct:creator <https://orcid.org/0000-0001-7682-5613>, <https://orcid.org/0000-0002-0721-551X>,
+    <https://orcid.org/0000-0002-6323-4942>, <https://orcid.org/0000-0002-6665-0896>,
+    <https://orcid.org/0000-0003-4093-2147>;
+  dct:description "Potato Blight disease observation"@en;
+  dct:rights <https://spdx.org/licenses/CC-BY-4.0.html>;
   dct:title "Agro Ontology"@en;
-  skos:hasTopConcept <http://purl.org/m4m-dk-3/variables/>, vars:sample_ID;
+  pav:createdOn "2022-01-21T10:03:28Z"@en;
+  pav:lastUpdatedOn "2022-01-21T10:03:28Z"@en;
+  pav:version "0.0.1"@en;
+  skos:hasTopConcept <http://purl.org/m4m-dk-3/variables/>, vars:CountryCode, vars:CropSeasonYear,
+    vars:GrowthStageName, vars:ObservationID, vars:SampleID, vars:SeverityCategoryName;
   skos:inScheme <http://purl.org/m4m-dk-3/variables/>;
   skos:topConceptOf <http://purl.org/m4m-dk-3/variables/> .
 
-vars:sample_ID a skos:Concept;
+vars:SampleID a skos:Concept;
   skos:definition "Number given to the sample after institutes nameing standard"@en;
   skos:inScheme <http://purl.org/m4m-dk-3/variables/>;
-  skos:prefLabel "sample_ID"@en;
+  skos:prefLabel "SampleID"@en;
+  skos:topConceptOf <http://purl.org/m4m-dk-3/variables/> .
+
+vars:ObservationID a skos:Concept;
+  skos:definition "Running number"@en;
+  skos:inScheme <http://purl.org/m4m-dk-3/variables/>;
+  skos:prefLabel "ObservationID"@en;
+  skos:topConceptOf <http://purl.org/m4m-dk-3/variables/> .
+
+vars:CropSeasonYear a skos:Concept;
+  skos:definition "4 digit number representing the year the disease was observed. Automatically created from the Blight Tracker App."@en;
+  skos:inScheme <http://purl.org/m4m-dk-3/variables/>;
+  skos:prefLabel "CropSeasonYear"@en;
+  skos:topConceptOf <http://purl.org/m4m-dk-3/variables/> .
+
+vars:CountryCode a skos:Concept;
+  dct:source <https://www.iso.org/obp/ui/#search>;
+  skos:definition "2 char code as defined in the ISO standard ISO 3166-1 alpha-2 codes"@en;
+  skos:inScheme <http://purl.org/m4m-dk-3/variables/>;
+  skos:prefLabel "CountryCode"@en;
+  skos:topConceptOf <http://purl.org/m4m-dk-3/variables/> .
+
+vars:GrowthStageName a skos:Concept;
+  dct:source <https://en.wikipedia.org/wiki/BBCH-scale_(potato)>;
+  skos:inScheme <http://purl.org/m4m-dk-3/variables/>;
+  skos:prefLabel "GrowthStageName"@en;
+  skos:topConceptOf <http://purl.org/m4m-dk-3/variables/> .
+
+vars:SeverityCategoryName a skos:Concept;
+  skos:inScheme <http://purl.org/m4m-dk-3/variables/>;
+  skos:prefLabel "SeverityCategoryName"@en;
   skos:topConceptOf <http://purl.org/m4m-dk-3/variables/> .

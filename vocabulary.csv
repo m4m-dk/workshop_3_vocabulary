@@ -9,24 +9,28 @@ PREFIX,unit,http://qudt.org/vocab/unit/,"Prefix for QUDT Vocabulary of Units whi
 Metadata about vocabulary
 
 dct:title,Agro Ontology,Title of the vocabulary
-dct:description,,Description of the controlled vocabulary
-dct:creator,,An ORCID ID of the vocabulary creator
+dct:description,Potato Blight disease observation,Description of the controlled vocabulary
+dct:creator,https://orcid.org/0000-0002-6665-0896,Poul Lassen
+dct:creator,https://orcid.org/0000-0001-7682-5613,Jens Grønbech Hansen
+dct:creator,https://orcid.org/0000-0002-6323-4942,Margit Styrbæk Jørgensen
+dct:creator,https://orcid.org/0000-0003-4093-2147,Eva Overby Bach
+dct:creator,https://orcid.org/0000-0002-0721-551X,Ying Wang
 dct:creator
-dct:creator
-dct:creator
-dct:rights,,License under which the vocabulary is provided
-pav:version,,Vocabulary version
-pav:createdOn,,Date when vocabulary was initially created
-pav:lastUpdatedOn,,Date of the last vocabulary update
+dct:rights,https://spdx.org/licenses/CC-BY-4.0.html,License under which the vocabulary is provided
+pav:version,0.0.1,Vocabulary version
+pav:createdOn,2022-01-21T10:03:28Z,Date when vocabulary was initially created (follow https://en.wikipedia.org/wiki/ISO_8601)
+pav:lastUpdatedOn,2022-01-21T10:03:28Z,Date of the last vocabulary update
 Definition of terms (optionally properties)
 
 Identifier,skos:prefLabel@en,"qudt:unit(separator="","")","skos:altLabel(separator="";"")",skos:definition@en,"dct:source(separator="","")","skos:broader(separator="","")","skos:exactMatch(separator="","")","skos:closeMatch(separator="","")",skos:editorialNote@en,"dct:creator(separator="","")","dct:contributor(separator="","")"
-vars:sample_ID,sample_ID,,,Number given to the sample after institutes nameing standard
-vars:
-vars:
-vars:
-vars:
-vars:
+vars:SampleID,SampleID,,,Number given to the sample after institutes nameing standard
+vars:ObservationID,ObservationID,,,Running number
+vars:CropSeasonYear,CropSeasonYear,,,4 digit number representing the year the disease was observed. Automatically created from the Blight Tracker App.
+vars:CountryCode,CountryCode,,,2 char code as defined in the ISO standard ISO 3166-1 alpha-2 codes ,"https://www.iso.org/obp/ui/#search
+
+"
+vars:GrowthStageName,GrowthStageName,,,,https://en.wikipedia.org/wiki/BBCH-scale_(potato)
+vars:SeverityCategoryName,SeverityCategoryName
 vars:
 vars:
 vars:
