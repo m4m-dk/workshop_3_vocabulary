@@ -31,9 +31,9 @@ vars:CountryCode,CountryCode,,,2 char code as defined in the ISO standard ISO 31
 "
 vars:GrowthStageName,GrowthStageName,,,,https://en.wikipedia.org/wiki/BBCH-scale_(potato)
 vars:SeverityCategoryName,SeverityCategoryName
-vars:
-vars:
-vars:
+vars:Disease,Disease,,,Crop Disease name
+vars:PotatoLateBlight,PotatoLateBlight,,,Potato disease caused by the oomycete Phytophthora infestans,,vars:Disease
+vars:PotatoEarlyBlight,PotatoEarlyBlight,,,Potato disease caused by the fungus Alternaria solani,,vars:Disease
 vars:
 vars:
 vars:

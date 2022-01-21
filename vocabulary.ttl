@@ -15,7 +15,7 @@
   pav:lastUpdatedOn "2022-01-21T10:03:28Z"@en;
   pav:version "0.0.1"@en;
   skos:hasTopConcept <http://purl.org/m4m-dk-3/variables/>, vars:CountryCode, vars:CropSeasonYear,
-    vars:GrowthStageName, vars:ObservationID, vars:SampleID, vars:SeverityCategoryName;
+    vars:Disease, vars:GrowthStageName, vars:ObservationID, vars:SampleID, vars:SeverityCategoryName;
   skos:inScheme <http://purl.org/m4m-dk-3/variables/>;
   skos:topConceptOf <http://purl.org/m4m-dk-3/variables/> .
 
@@ -54,3 +54,22 @@ vars:SeverityCategoryName a skos:Concept;
   skos:inScheme <http://purl.org/m4m-dk-3/variables/>;
   skos:prefLabel "SeverityCategoryName"@en;
   skos:topConceptOf <http://purl.org/m4m-dk-3/variables/> .
+
+vars:Disease a skos:Concept;
+  skos:definition "Crop Disease name"@en;
+  skos:inScheme <http://purl.org/m4m-dk-3/variables/>;
+  skos:narrower vars:PotatoEarlyBlight, vars:PotatoLateBlight;
+  skos:prefLabel "Disease"@en;
+  skos:topConceptOf <http://purl.org/m4m-dk-3/variables/> .
+
+vars:PotatoLateBlight a skos:Concept;
+  skos:broader vars:Disease;
+  skos:definition "Potato disease caused by the oomycete Phytophthora infestans"@en;
+  skos:inScheme <http://purl.org/m4m-dk-3/variables/>;
+  skos:prefLabel "PotatoLateBlight"@en .
+
+vars:PotatoEarlyBlight a skos:Concept;
+  skos:broader vars:Disease;
+  skos:definition "Potato disease caused by the fungus Alternaria solani"@en;
+  skos:inScheme <http://purl.org/m4m-dk-3/variables/>;
+  skos:prefLabel "PotatoEarlyBlight"@en .
