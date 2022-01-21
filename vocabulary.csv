@@ -8,7 +8,7 @@ PREFIX,qudt,http://qudt.org/schema/qudt/,"Prefix for ""Quantity, Unit, Dimension
 PREFIX,unit,http://qudt.org/vocab/unit/,"Prefix for QUDT Vocabulary of Units which terms we will use to semantically define units of measurements for terms (i.e., variables) we are defining "
 Metadata about vocabulary
 
-dct:title,,Title of the vocabulary
+dct:title,Agro Ontology,Title of the vocabulary
 dct:description,,Description of the controlled vocabulary
 dct:creator,,An ORCID ID of the vocabulary creator
 dct:creator
